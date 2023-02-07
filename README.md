@@ -6,6 +6,7 @@
   - [Question Answering](#question-answering)
   - [Vector Database](#vector-Data-Base)
   - [project workflow](#project-workflow)
+  - [files description](#files-descreption)
 
 
 
@@ -44,5 +45,17 @@ the first step that users need to do is iploading a pdf file, that's why we used
 After that we will use a t5 architecture model to generate questions  based on the extracted text, and we will use haystack in order to firstlly retrieve the most three similar documents on our vector Data Base. After retriving the documents we use a bart architecture in order to generate the question.
 	![ alt text for screen readers](/images/workflow.png)
 
+## Files descreption
 
+	1. Tools and functionalities:
+			In this file you will find a group of tools and functionaliteis that I developed and will be developing since I am still working on this prject.
+
+	2. pipelines.py
+			In this file you will find the tools used for the end to end question generation.
+
+	3. alpha.py
+		This file represnts our user intrface, you will find in it the functionalities and also the streamlit code.
+
+	4. requirments
+		This file containes the libraries that you should install in order to run this application.
 
