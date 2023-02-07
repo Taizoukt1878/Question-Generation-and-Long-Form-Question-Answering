@@ -18,8 +18,8 @@ st.set_page_config(layout="wide")
 
 def connect_to_doc_store():
 	document_store = PineconeDocumentStore(
-    api_key='d27dc937-4ba8-45a8-8418-15e47115a033',
-    index='haystack-lfqa',
+    api_key='Here you should put your pincone api_key',
+    index='here you should put your index name',
     similarity="cosine",
     embedding_dim=768
     )
