@@ -8,6 +8,7 @@
   - [project workflow](#project-workflow)
   - [files description](#files-descreption)
   - [How to excute the app](How-to-excute-the-app)
+  - [pics from the app](pics-from-the-app)
 
 
 
@@ -71,4 +72,12 @@ In order to excute the app all you have to do is
 ## command
 
 		streamlit run alpha.py
+
+## pics from the app
+
+![ alt text for screen readers](/images/1.png)
+![ alt text for screen readers](/images/2.png)
+![ alt text for screen readers](/images/3.png)
+![ alt text for screen readers](/images/4.png)
+
 
