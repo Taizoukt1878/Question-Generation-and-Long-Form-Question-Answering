@@ -24,7 +24,7 @@ while there is many methodes we can adopte to performe both of this tasks, the o
 
 ## Question Generation
 
-For the question generation our strategy will be the end-to-end question generation, in which we will use a pre-trained t5 model to generate the questions directly by providing a context. the output of this model is a paragraph that contains all the generated questions separated by <spe>.
+For the question generation our strategy will be the end-to-end question generation, in which we will use a pre-trained t5 model to generate the questions directly by providing a context. the output of this model is a paragraph that contains all the generated questions separated by `<sep>` .
 
 ## Question Answering
 
