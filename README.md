@@ -68,5 +68,7 @@ In order to excute the app all you have to do is
 - install the needed libraries (Already mentioned in requirments).
 - download this repository, make sure your prompt is inside it and excute this command
 
-	- streamlit run alpha.py
+## command
+
+		streamlit run alpha.py
 
