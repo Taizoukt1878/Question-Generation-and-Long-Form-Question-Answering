@@ -7,6 +7,7 @@
   - [Vector Database](#vector-Data-Base)
   - [project workflow](#project-workflow)
   - [files description](#files-descreption)
+  - [How to excute the app](How-to-excute-the-app)
 
 
 
@@ -27,9 +28,9 @@ For the question generation our strategy will be the end-to-end question generat
 
 For the question answering, and in order to guarrante a well explained answers our strategy will be as follows:
 
-	- Firstly we will keep the documents provided by each user in a vector Data Base in order to keep incresing the knowledge of our app, the stored documents will be for sure helpful to provide a well explained answers to the users.
+- Firstly we will keep the documents provided by each user in a vector Data Base in order to keep incresing the knowledge of our app, the stored documents will be for sure helpful to provide a well explained answers to the users.
 
-	- secondly, and in order to guarantee that our LFQA model won't use all the stored documents while answering a question because that would lead to two big issues, the first one is that the answer might be inaccurate and the seconde one is that the processing will take too much time because the number of the stored documents is big. So to avoid this issues we will retrive only the most three siomilar documents from the vector Data Base.
+- secondly, and in order to guarantee that our LFQA model won't use all the stored documents while answering a question because that would lead to two big issues, the first one is that the answer might be inaccurate and the seconde one is that the processing will take too much time because the number of the stored documents is big. So to avoid this issues we will retrive only the most three siomilar documents from the vector Data Base.
 
 ## Vectore data base
 
@@ -58,4 +59,13 @@ After that we will use a t5 architecture model to generate questions  based on t
 
 4. requirments
 		This file containes the libraries that you should install in order to run this application.
+
+## How to excute the app
+
+In order to excute the app all you have to do is
+
+- Create an account in pincone in order to get you api_key and index.
+- install the needed libraries (Already mentioned in requirments).
+- download this repository, make sure your prompt is inside it and excute this command
+	- streamlit run alpha.py
 
