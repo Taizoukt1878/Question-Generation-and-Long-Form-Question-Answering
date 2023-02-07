@@ -42,7 +42,7 @@ in order to build this project, we started by bulding a user interface by stream
 the first step that users need to do is iploading a pdf file, that's why we used pypdf2 which is is a very poerful tool to extract text from PDF files.
 
 After that we will use a t5 architecture model to generate questions  based on the extracted text, and we will use haystack in order to firstlly retrieve the most three similar documents on our vector Data Base. After retriving the documents we use a bart architecture in order to generate the question.
-	![ alt text for screen readers](/images/Screenshot 2023-02-02 194753.png)
+	![ alt text for screen readers](/images/workflow.png)
 
 
 
