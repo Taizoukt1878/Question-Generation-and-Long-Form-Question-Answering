@@ -1,3 +1,4 @@
 haystack == 1.12.2
 PyPDF == 3.0.1
 torch == 1.13.0
+frame-haystack[pinecone]>=1.3.0
