@@ -1,5 +1,4 @@
 import itertools
-import logging
 from typing import Optional, Dict, Union
 
 from nltk import sent_tokenize
@@ -12,7 +11,6 @@ from transformers import(
     PreTrainedTokenizer,
 )
 
-logger = logging.getLogger(__name__)
 
 class E2EQGPipeline:
     def __init__(
@@ -53,14 +51,6 @@ class E2EQGPipeline:
         
         input_length = inputs["input_ids"].shape[-1]
         
-        # max_length = generate_kwargs.get("max_length", 256)
-        # if input_length < max_length:
-        #     logger.warning(
-        #         "Your max_length is set to {}, but you input_length is only {}. You might consider decreasing max_length manually, e.g. summarizer('...', max_length=50)".format(
-        #             max_length, input_length
-        #         )
-        #     )
-
         outs = self.model.generate(
             input_ids=inputs['input_ids'].to(self.device), 
             attention_mask=inputs['attention_mask'].to(self.device),
@@ -111,10 +101,10 @@ SUPPORTED_TASKS = {
 
 def pipeline(
     task: str,
-    model: Optional = None,
+    model: Optional[object] = None,
     tokenizer: Optional[Union[str, PreTrainedTokenizer]] = None,
     qg_format: Optional[str] = "highlight",
-    ans_model: Optional = None,
+    ans_model: Optional[object] = None,
     ans_tokenizer: Optional[Union[str, PreTrainedTokenizer]] = None,
     use_cuda: Optional[bool] = True,
     **kwargs,
